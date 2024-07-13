@@ -1,4 +1,4 @@
-.menu {
+/* .menu {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -34,4 +34,24 @@
     padding: 10px;
     background-color: #ccc;
     display: none;
-   }
+   } */
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    outline: tomato 1px solid;
+    margin-left: 400px;
+    overflow:hidden;
+}
+
+.overlay {
+    position:absolute;
+    left: 0;
+    top: 0;
+    background-color: grey;
+    width: 45%;
+    height: 100%;
+    transform: translateX(-80%);
+}
+.overlay:hover{transform: translate(0);
+}
