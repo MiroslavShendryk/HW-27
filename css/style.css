@@ -1,42 +1,4 @@
-/* .container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    outline: tomato 1px solid;
-    margin-left: 400px;
-    overflow: hidden;
-}
 
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: grey;
-    width: 45%;
-    height: 100%;
-    transform: translateX(-80%);
-}
-
-.overlay-div {
-    writing-mode: vertical-rl;
-    color: white;
-    text-align: center;
-    padding: 120px 5px;
-}
-
-.overlay:hover {
-    transform: translate(0);
-}
-
-.submeni-item {
-    writing-mode: vertical-rl;
-    padding-left: 60px;
-}
-
-.overlay-text {
-    writing-mode: vertical-rl;
-    transform: translateX(-30%);
-} */
 .container {
     position: fixed;
     left: 0;
@@ -48,13 +10,53 @@
     overflow-x: hidden;
 }
 
-.container-div {
+.container:hover {
+    width: 200px;
+}
+
+.text {
     writing-mode: vertical-rl;
     color: white;
     text-align: center;
-    padding: 120px 5px
+    padding: 120px 5px;
 }
-.submenu{
+
+.overlay {
     display: none;
     padding-left: 30px;
+}
+
+.container:hover .overlay {
+    display: block;
+}
+
+.container:hover .text {
+    display: none;
+}
+.item {
+    list-style: none;
+    position: relative;
+}
+.item-link {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.item-link:hover {
+    color: orange;
+}
+
+.item-link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    border: 1px black solid;
+    transform: rotate(45deg);
+    top: 21px;
+    left: 0;
 }
