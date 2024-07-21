@@ -41,11 +41,11 @@
     height: 400px;
     outline: tomato 1px solid;
     margin-left: 400px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .overlay {
-    position:absolute;
+    position: absolute;
     left: 0;
     top: 0;
     background-color: grey;
@@ -53,5 +53,17 @@
     height: 100%;
     transform: translateX(-80%);
 }
-.overlay:hover{transform: translate(0);
+
+.overlay:hover {
+    transform: translate(0);
+}
+
+.submeni-item {
+    writing-mode: vertical-rl;
+    padding-left: 60px;
+}
+
+.overlay-text {
+    writing-mode: vertical-rl;
+    transform: translateX(-30%);
 }
